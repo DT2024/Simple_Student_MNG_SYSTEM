@@ -51,7 +51,7 @@ namespace Assignment3_Darius
         }
 
 
-        public static void SaveItems(List<Students> students)
+        public static void SaveStudents(List<Students> students)
         {
             // Convert each student to a string and write to the file
             List<string> lines = students.Select(student =>
@@ -61,7 +61,7 @@ namespace Assignment3_Darius
             // Write to the file
             File.WriteAllLines(Path, lines);
         }
-        // method to delete the item from the listbox
+        // method to delete the student from the listbox
         public static void RemoveStudent(Students student)
         {
             students.Remove(student);

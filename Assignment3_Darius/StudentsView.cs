@@ -395,7 +395,7 @@ namespace Assignment3_Darius
                 if (message == DialogResult.Yes)
                 {
                     // Save the changes to the text file
-                    StudentDB.SaveItems(StudentsList);
+                    StudentDB.SaveStudents(StudentsList);
                     this.Close();
                 }
                 else if (message == DialogResult.No)
